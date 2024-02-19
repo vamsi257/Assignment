@@ -2,7 +2,8 @@ import os
 import time
 from flask import Flask, render_template, request
 import pyautogui
-
+pyautogui.FAILSAFE = False
+pyautogui.PAUSE = 0.1
 app = Flask(__name__)
 
 @app.route('/')
